@@ -7,6 +7,15 @@ SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 CSRF_ENABLED = True
 SECRET_KEY = 'you-will-never-guess'
 
+# mail server settings
+MAIL_SERVER = 'localhost'
+MAIL_PORT = 25
+MAIL_USERNAME = None
+MAIL_PASSWORD = None
+
+# administrator list
+ADMINS = ['you@example.com']
+
 OPENID_PROVIDERS = [
     { 'name': 'Google', 'url': 'https://www.google.com/accounts/o8/id' },
     { 'name': 'Yahoo', 'url': 'https://me.yahoo.com' },
